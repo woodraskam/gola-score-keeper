@@ -14,7 +14,7 @@ var (
 )
 
 func main() {
-	log.Printf("Starting Gola Score Keeper v%s (build: %s, commit: %s)", Version, BuildTime, GitCommit)
+	log.Printf("Starting Goal Score Keeper v%s (build: %s, commit: %s)", Version, BuildTime, GitCommit)
 
 	// Set Gin mode based on environment
 	if os.Getenv("GIN_MODE") == "" {
@@ -92,7 +92,7 @@ func main() {
 	// Main dashboard route
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(200, "dashboard.html", gin.H{
-			"title": "Gola Score Keeper",
+			"title": "Goal Score Keeper",
 		})
 	})
 

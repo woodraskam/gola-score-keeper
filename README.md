@@ -1,4 +1,4 @@
-# Gola Score Keeper
+# Goal Score Keeper
 
 A real-time soccer penalty shot scoring application designed for trade show environments. The system captures contestant information via badge scanning and tracks penalty shot performance for booth engagement analytics.
 
@@ -38,8 +38,8 @@ A real-time soccer penalty shot scoring application designed for trade show envi
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/gola-score-keeper.git
-cd gola-score-keeper
+git clone https://github.com/yourusername/goal-score-keeper.git
+cd goal-score-keeper
 ```
 
 2. Install dependencies:
@@ -61,7 +61,7 @@ go run cmd/server/main.go
 ## Project Structure
 
 ```
-gola-score-keeper/
+goal-score-keeper/
 ├── cmd/
 │   ├── server/          # Main application entry
 │   └── setup/           # Database initialization
@@ -158,7 +158,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Documentation**: See `/docs` directory
 - **Issues**: Report bugs via GitHub issues
 - **Email**: Contact project maintainers
-- **Slack**: Join #gola-score-keeper channel for real-time support
+- **Slack**: Join #goal-score-keeper channel for real-time support
 
 ---
 

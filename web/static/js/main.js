@@ -1,6 +1,6 @@
-// Gola Score Keeper - Main JavaScript
+// Goal Score Keeper - Main JavaScript
 
-class GolaScoreKeeper {
+class GoalScoreKeeper {
     constructor() {
         this.currentContestant = null;
         this.currentScore = 0;
@@ -318,7 +318,7 @@ class GolaScoreKeeper {
 
 // Initialize application when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new GolaScoreKeeper();
+    new GoalScoreKeeper();
 });
 
 // Add CSS for shot feedback

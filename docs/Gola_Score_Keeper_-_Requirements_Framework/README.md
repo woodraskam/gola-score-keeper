@@ -1,4 +1,4 @@
-# Gola Score Keeper - Implementation Guide
+# Goal Score Keeper - Implementation Guide
 
 ## Table of Contents
 1. [Project Overview and Objectives](#project-overview-and-objectives)
@@ -15,7 +15,7 @@
 ## Project Overview and Objectives
 
 ### Project Summary
-Gola Score Keeper is a real-time soccer penalty shot scoring application designed for trade show environments. The system captures contestant information via badge scanning and tracks penalty shot performance for booth engagement analytics.
+Goal Score Keeper is a real-time soccer penalty shot scoring application designed for trade show environments. The system captures contestant information via badge scanning and tracks penalty shot performance for booth engagement analytics.
 
 ### Primary Objectives
 - **Real-time Badge Scanning**: Capture contestant information using MacBook Air camera
@@ -355,8 +355,8 @@ Integration & Testing :2024-02-26, 14d
 ### Initial Setup
 ```bash
 # 1. Clone repository
-git clone https://github.com/yourorg/gola-score-keeper.git
-cd gola-score-keeper
+git clone https://github.com/yourorg/goal-score-keeper.git
+cd goal-score-keeper
 
 # 2. Install dependencies
 brew install tesseract
@@ -371,7 +371,7 @@ go run cmd/server/main.go
 
 ### Project Structure
 ```
-gola-score-keeper/
+goal-score-keeper/
 ├── cmd/
 │   ├── server/          # Main application entry
 │   └── setup/           # Database initialization

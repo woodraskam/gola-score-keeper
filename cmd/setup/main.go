@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	log.Println("Setting up Gola Score Keeper database...")
+	log.Println("Setting up Goal Score Keeper database...")
 
 	// Get database path from environment or use default
 	dbPath := os.Getenv("DB_PATH")

@@ -1,14 +1,14 @@
-# Gola Score Keeper - Cross-Module Integration Guide
+# Goal Score Keeper - Cross-Module Integration Guide
 
 ## Overview
-This document describes how all modules in the Gola Score Keeper system integrate together, including data flow, API interactions, and shared components.
+This document describes how all modules in the Goal Score Keeper system integrate together, including data flow, API interactions, and shared components.
 
 ## System Architecture Integration
 
 ### Module Dependencies
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Gola Score Keeper                        │
+│                    Goal Score Keeper                        │
 ├─────────────────────────────────────────────────────────────┤
 │  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────┐ │
 │  │ Apple Silicon   │  │ Badge Scanning  │  │ OCR         │ │

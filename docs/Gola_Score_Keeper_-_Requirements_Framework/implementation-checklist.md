@@ -1,7 +1,7 @@
-# Gola Score Keeper - Master Implementation Checklist
+# Goal Score Keeper - Master Implementation Checklist
 
 ## Overview
-Comprehensive implementation checklist for the Gola Score Keeper system, following the standardized requirements outlined in MASTER_REQUIREMENTS.md and INTEGRATION_GUIDE.md.
+Comprehensive implementation checklist for the Goal Score Keeper system, following the standardized requirements outlined in MASTER_REQUIREMENTS.md and INTEGRATION_GUIDE.md.
 
 ## Current State Analysis
 - **Existing Components**: No existing components - greenfield development
@@ -24,8 +24,8 @@ Comprehensive implementation checklist for the Gola Score Keeper system, followi
 **Priority**: Critical**
 
 ##### 1.1.1 Directory Structure Setup
-- [ ] Create root project directory: `gola-score-keeper/`
-- [ ] Initialize Go module: `go mod init github.com/yourorg/gola-score-keeper`
+- [ ] Create root project directory: `goal-score-keeper/`
+- [ ] Initialize Go module: `go mod init github.com/yourorg/goal-score-keeper`
 - [ ] Create main application entry: `cmd/server/main.go`
 - [ ] Create database setup utility: `cmd/setup/main.go`
 - [ ] Create camera test utility: `cmd/camera-test/main.go`

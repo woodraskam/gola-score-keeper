@@ -1,4 +1,4 @@
-# Multi-stage build for Gola Score Keeper
+# Multi-stage build for Goal Score Keeper
 
 # Build stage
 FROM golang:1.21-alpine AS builder
@@ -24,7 +24,7 @@ RUN go mod download
 COPY . .
 
 # Build the application
-RUN CGO_ENABLED=1 GOOS=linux go build -a -installsuffix cgo -o gola-score-keeper ./cmd/server
+RUN CGO_ENABLED=1 GOOS=linux go build -a -installsuffix cgo -o goal-score-keeper ./cmd/server
 
 # Runtime stage
 FROM alpine:latest
@@ -44,7 +44,7 @@ RUN addgroup -g 1001 -S appgroup && \
 WORKDIR /app
 
 # Copy binary from builder stage
-COPY --from=builder /app/gola-score-keeper .
+COPY --from=builder /app/goal-score-keeper .
 
 # Copy web assets
 COPY --from=builder /app/web ./web
@@ -63,4 +63,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD wget --no-verbose --tries=1 --spider http://localhost:8080/health || exit 1
 
 # Run the application
-CMD ["./gola-score-keeper"]
+CMD ["./goal-score-keeper"]

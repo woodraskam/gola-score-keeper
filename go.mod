@@ -1,4 +1,4 @@
-module github.com/yourusername/gola-score-keeper
+module github.com/yourusername/goal-score-keeper
 
 go 1.21
 

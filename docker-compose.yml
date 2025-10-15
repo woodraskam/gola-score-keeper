@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  gola-score-keeper:
+  goal-score-keeper:
     build: .
     ports:
       - "8080:8080"
@@ -31,7 +31,7 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./ssl:/etc/nginx/ssl:ro
     depends_on:
-      - gola-score-keeper
+      - goal-score-keeper
     restart: unless-stopped
     profiles:
       - production

@@ -1,7 +1,7 @@
-# Gola Score Keeper - Build Configuration
+# Goal Score Keeper - Build Configuration
 
 # Variables
-APP_NAME := gola-score-keeper
+APP_NAME := goal-score-keeper
 VERSION := 1.0.0
 BUILD_TIME := $(shell date -u '+%Y-%m-%d_%H:%M:%S')
 GIT_COMMIT := $(shell git rev-parse --short HEAD)
