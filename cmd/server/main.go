@@ -33,12 +33,12 @@ func main() {
 		c.Header("Access-Control-Allow-Origin", "*")
 		c.Header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
 		c.Header("Access-Control-Allow-Headers", "Content-Type, Authorization")
-		
+
 		if c.Request.Method == "OPTIONS" {
 			c.AbortWithStatus(204)
 			return
 		}
-		
+
 		c.Next()
 	})
 
@@ -59,17 +59,17 @@ func main() {
 		api.GET("/contestants", func(c *gin.Context) {
 			c.JSON(200, gin.H{"message": "Contestants endpoint - to be implemented"})
 		})
-		
+
 		// Penalty shot routes
 		api.POST("/penalty-shots", func(c *gin.Context) {
 			c.JSON(200, gin.H{"message": "Penalty shots endpoint - to be implemented"})
 		})
-		
+
 		// Leaderboard routes
 		api.GET("/leaderboard", func(c *gin.Context) {
 			c.JSON(200, gin.H{"message": "Leaderboard endpoint - to be implemented"})
 		})
-		
+
 		// Badge scanning routes
 		api.POST("/scan-badge", func(c *gin.Context) {
 			c.JSON(200, gin.H{"message": "Badge scanning endpoint - to be implemented"})
@@ -80,7 +80,7 @@ func main() {
 	router.GET("/ws/leaderboard", func(c *gin.Context) {
 		c.JSON(200, gin.H{"message": "WebSocket leaderboard endpoint - to be implemented"})
 	})
-	
+
 	router.GET("/ws/scoring", func(c *gin.Context) {
 		c.JSON(200, gin.H{"message": "WebSocket scoring endpoint - to be implemented"})
 	})
